@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F1F5F9"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student Task Manager"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#12345A"
+        android:gravity="center"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Organize your studies, one task at a time!"
+        android:textSize="14sp"
+        android:textColor="#64748B"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="22dp" />
+
+    <TextView
+        android:id="@+id/taskSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Tasks: 0    Completed: 0"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:padding="18dp"
+        android:background="#2563EB"
+        android:layout_marginBottom="22dp" />
+
+    <EditText
+        android:id="@+id/taskInput"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Enter your task"
+        android:textColor="#1E293B"
+        android:textColorHint="#94A3B8"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:padding="12dp"
+        android:background="#FFFFFF" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="ADD TASK"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2563EB"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="22dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Tasks"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:textColor="#12345A"
+        android:layout_marginBottom="12dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/taskContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </ScrollView>
+
+</LinearLayout>
